@@ -15,16 +15,16 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.  组件通信">
+  <meta name="description" content="组件通信 父子组件通信两个组件   父  与  子&lt;br &#x2F;&gt;        props：【‘’】  接受数据  只接受不校验  写法1： 123props:&amp;#123;		money:Number  &#x2F;&#x2F;接受number类型&amp;#125;   写法2：  1234money:&amp;#123;		validator(val)&amp;#123; &#x2F;&#x2F;检验函数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue基础">
 <meta property="og:url" content="http://example.com/2021/04/15/6.vue%E5%9F%BA%E7%A1%804/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.  组件通信">
+<meta property="og:description" content="组件通信 父子组件通信两个组件   父  与  子&lt;br &#x2F;&gt;        props：【‘’】  接受数据  只接受不校验  写法1： 123props:&amp;#123;		money:Number  &#x2F;&#x2F;接受number类型&amp;#125;   写法2：  1234money:&amp;#123;		validator(val)&amp;#123; &#x2F;&#x2F;检验函数">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
 <meta property="article:published_time" content="2021-04-15T12:52:57.758Z">
-<meta property="article:modified_time" content="2021-04-15T12:59:19.811Z">
+<meta property="article:modified_time" content="2021-04-15T13:03:34.090Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
@@ -141,7 +141,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~17.29K
+                            ~17.09K
                         
                         字
                     </li>
@@ -150,12 +150,11 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1618491559811"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1618491814090"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                 <hr />
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<p><a name="613cf536"></a></p>
+                <p><a name="613cf536"></a></p>
 <h4 id="组件通信"><a href="#组件通信" class="headerlink" title="组件通信"></a>组件通信</h4><p><a name="Cs5uE"></a></p>
 <h2 id="父子组件通信"><a href="#父子组件通信" class="headerlink" title="父子组件通信"></a>父子组件通信</h2><pre><code>两个组件   父  与  子&lt;br /&gt;    
 </code></pre>
@@ -422,7 +421,12 @@ js页面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "http://example.com/2021/04/15/6.vue%E5%9F%BA%E7%A1%804/";
             const title         = "「vue基础」";
-            const excerpt       = `Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...`;
+            const excerpt       = `
+组件通信
+父子组件通信两个组件   父  与  子&lt;br /&gt;    
+
+  props：【‘’】  接受数据  只接受不校验  写法1：
+123props:&#123;		money:Number  &#x2F;&#x...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
